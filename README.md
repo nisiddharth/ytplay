@@ -40,6 +40,8 @@ Copy [ytplay](ytplay) to your `~/.local/bin` directory, like so:
 curl https://raw.githubusercontent.com/nisiddharth/ytplay/main/ytplay > ~/.local/bin/ytplay && chmod +x ~/.local/bin/ytplay
 ```
 
+Also, the script needs [YouTube Data API key](https://developers.google.com/youtube/v3/docs/search/list). You can either keep that in `~/.api_keys/YT_API_KEY` or edit the appropriate line in the script.
+
 ## Example
 
 ```bash
