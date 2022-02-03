@@ -39,3 +39,13 @@ Copy [ytplay](ytplay) to your `~/.local/bin` directory, like so:
 ```bash
 curl https://raw.githubusercontent.com/nisiddharth/ytplay/main/ytplay > ~/.local/bin/ytplay && chmod +x ~/.local/bin/ytplay
 ```
+
+## Example
+
+```bash
+ytplay something just like this
+```
+
+Presents these 10 search results on `fzf` and plays the selected video on pressing enter:
+
+![Screenshot](./screenshots/search-results.png)
