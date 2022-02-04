@@ -3,7 +3,7 @@
 usage() {
   cat << EOF
 Usage: $0 [OPTION] query
-Requires mpv, youtube-dl, jq, curl, awk and fzf to be installed.
+Requires mpv, yt-dlp, jq, curl, awk and fzf to be installed.
 OPTIONS:
 	-m, --music                Music only mode. No video playback.
 	-t, --top                  Play the top search result. No options presented.

@@ -6,6 +6,7 @@ Supports:
 - Music only playback
 - List of search results to select from
 - Play on infinite loop
+- No login required, age restricted videos are also playable
 
 ## Screenshots
 
@@ -17,7 +18,7 @@ Supports:
 
 ## Requirements
 
-`mpv`, `youtube-dl`, `jq`, `curl`, `awk` and `fzf`.
+`mpv`, 'yt-dlp`, `jq`, `curl`, `awk` and `fzf`.
 
 ## Usage
 
@@ -40,7 +41,7 @@ Copy [ytplay](ytplay) to your `~/.local/bin` directory, like so:
 curl https://raw.githubusercontent.com/nisiddharth/ytplay/main/ytplay > ~/.local/bin/ytplay && chmod +x ~/.local/bin/ytplay
 ```
 
-Also, the script needs [YouTube Data API key](https://developers.google.com/youtube/v3/docs/search/list). You can either keep that in `~/.api_keys/YT_API_KEY` or edit the appropriate line in the script.
+Also, the script needs [YouTube Data API key](https://developers.google.com/youtube/v3/docs/search/list) for searching. You can either keep that in `~/.api_keys/YT_API_KEY` or edit the appropriate line in the script.
 
 ## Example
 
