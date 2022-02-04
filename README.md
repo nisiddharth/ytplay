@@ -18,7 +18,7 @@ Supports:
 
 ## Requirements
 
-`mpv`, 'yt-dlp`, `jq`, `curl`, `awk` and `fzf`.
+`mpv`, `yt-dlp`, `jq`, `curl`, `awk` and `fzf`.
 
 ## Usage
 
