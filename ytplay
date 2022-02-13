@@ -9,6 +9,8 @@ OPTIONS:
 	-t, --top                  Play the top search result. No options presented.
 	-l, --loop                 Play the media on an infinite loop
 	-r, --results COUNT        Specify the number of options to be presented
+	-c, --captions             Turns on YouTube captions in English
+	--clip                     Take the query input from clipboard
 	-h, --help                 Show this help
 EOF
 }
@@ -37,6 +39,12 @@ while [[ "$#" -gt 0 ]]; do
 		-r|--results)
 			results=$2
 			shift
+			;;
+		-c|--captions)
+			mpv_options="$mpv_option --slang=en --fs --ytdl-raw-options=ignore-config=,sub-lang=en,write-auto-sub="
+			;;
+		--clip)
+			query=$(xclip -o -sel c)
 			;;
 		-h|--help)
 			usage
@@ -67,4 +75,5 @@ fi
 url="https://$video_id"
 
 echo "Playing: ${url}"
+notify-send "ytplay" "${url}"
 mpv $mpv_option --ytdl-format="bestvideo[height<=1440]+bestaudio/best" $url
